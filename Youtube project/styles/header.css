@@ -1,0 +1,168 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(216, 214, 214);
+  margin-bottom: 10px;
+  transition: 0.3s;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  z-index: 1000;
+}
+.header:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 3px;
+}
+
+.hamburger:hover {
+  height: 25px;
+  background-color: rgb(221, 221, 221);
+  padding: 6px 6px;
+  border-radius: 6px;
+
+
+}
+.youtube-logo {
+  height: 21px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 5px;
+}
+
+.youtube-logo:hover {
+  height: 25px;
+  background-color: rgb(224, 224, 224);
+  padding: 6px 6px;
+  border-radius: 6px;
+}
+.middle {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+}
+.right {
+  width: 180px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  margin-right: 20px;
+flex-shrink: 0;}
+
+.search-button {
+  height: 33px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: rgb(235, 235, 235);
+}
+
+.voice-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: none;
+  color: rgb(160, 160, 160);
+  margin-left: 10px;
+  cursor: pointer;
+transition: 0.3s;}
+
+  .voice-button:hover {
+    background-color: rgb(218, 218, 218);
+  }
+
+.input1 {
+  height: 33px;
+  flex: 1;
+  background-color: rgb(211, 211, 211);
+  border: none;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+   transition: 0.3s;
+   width: 0px;
+}
+.input1:hover {
+  background-color: rgb(145, 145, 145);
+}
+
+.input1::placeholder {
+  color: rgb(26, 26, 26);
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+ 
+}
+
+.apps, .notification, .upload {
+  height: 24px;
+  width: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.apps:hover, .notification:hover, .upload:hover {
+  transform: scale(1.07);
+  background-color: rgb(226, 226, 226);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.account {
+  height: 34px;
+  object-fit: cover;
+  width: 34px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.account:hover {
+  transform: scale(1.07);
+}
+
+.notification-header-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: -5px;
+  right: -5px;
+  padding: 3px 6px;
+  border-radius: 50px;
+  font-size: 12px;
+  transform: scale(0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.notification-count:hover {
+  transform: scale(1.006);
+  position: absolute;
+right: -8px;
+top: -8px;}
